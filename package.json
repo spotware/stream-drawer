@@ -1,0 +1,24 @@
+{
+  "name": "marble-drawer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/marble-drawer.js",
+  "typings": "lib/marble-drawer",
+  "scripts": {
+    "build": "webpack",
+    "tsc": "tsc"
+  },
+  "author": "Paulo Madronero",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jquery": "2.0.34",
+    "@types/node": "^6.0.58",
+    "css-loader": "^0.26.1",
+    "ts-loader": "^0.8.1",
+    "typescript": "^2.1.4",
+    "webpack": "^2.2.0-rc.3"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
