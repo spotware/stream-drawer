@@ -2,19 +2,19 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'lib/marble-drawer.ts'),
+    entry: path.resolve(__dirname, 'example/example_rx.ts'),
     output: {
-        filename: 'marble-drawer.js',
-        path: path.resolve(__dirname, 'lib')
+        filename: 'bundle-example.js',
+        path: path.resolve(__dirname, 'example/js')
     },
     devtool: 'source-map',
     resolve: {
-        extensions: ['.ts', '.js', '.json', '.css']
+        extensions: ['.ts', '.tsx', '.js', '.json', '.css']
     },
     module: {
       rules: [
-        { test: /\.ts$/, loader: 'ts-loader' },
-        { test: /\.css$/, loader: 'css-loader' }
+        { test: /\.tsx?$/, use: 'ts-loader' },
+        { test: /\.css$/, use: ['style-loader', 'css-loader'] }
       ]
     }
 };

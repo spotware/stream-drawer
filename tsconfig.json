@@ -4,11 +4,12 @@
     "target": "es5",
     "sourceMap": true,
     "skipLibCheck": true,
+    "jsx": "react",
     "typeRoots": [
       "node_modules/@types"
     ]
   },
   "files": [
-    "lib/marble-drawer.ts"
+    "lib/marble-drawer.tsx"
   ]
 }
