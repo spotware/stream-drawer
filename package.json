@@ -1,9 +1,8 @@
 {
-  "name": "marble-drawer",
-  "version": "2.0.0",
+  "name": "stream-drawer",
+  "version": "2.0.1",
   "description": "",
-  "main": "lib/marble-drawer.ts",
-  "typings": "lib/marble-drawer",
+  "main": "lib/stream-drawer.tsx",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",

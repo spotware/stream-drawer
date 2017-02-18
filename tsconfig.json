@@ -10,6 +10,6 @@
     ]
   },
   "files": [
-    "lib/marble-drawer.tsx"
+    "lib/stream-drawer.tsx"
   ]
 }

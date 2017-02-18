@@ -1,4 +1,4 @@
-import {Drawer, IObservableToFill} from "../lib/marble-drawer";
+import {Drawer, IObservableToFill} from "../lib/stream-drawer";
 
 window.onload = () => {
     const container = document.getElementById('container');
