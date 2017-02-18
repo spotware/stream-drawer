@@ -1,6 +1,6 @@
 {
   "name": "marble-drawer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "lib/marble-drawer.ts",
   "typings": "lib/marble-drawer",
@@ -9,7 +9,7 @@
     "watch": "webpack --watch",
     "tsc": "tsc"
   },
-  "author": "Paulo Madronero",
+  "author": "Spotware",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^6.0.58",
