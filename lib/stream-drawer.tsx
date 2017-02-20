@@ -34,7 +34,7 @@ export class Drawer {
             const marbles = logs.map((log, marbleKey) => {
                 let position = Math.floor((log.timeStamp - this.initialTime)/1000 * 10);
                 // let relativeTime = Math.floor(position / content.totalSeconds * CONST_TOTAL_TIME);
-                let relativeTime = Math.floor(position / content.totalSeconds);
+                let relativeTime = Math.floor(position / content.totalSeconds * 100);
                 const finalStyle = {left:`${relativeTime}px`};
                 return (
                     <a className="stream_line__marble" title={log.data} style={finalStyle} key={marbleKey}></a>
