@@ -9535,7 +9535,6 @@ __webpack_require__(182);
 var Drawer = (function () {
     function Drawer(container) {
         this.initialTime = new Date().getTime();
-        this.formattedObservers = [];
         this.contentStream = [];
         this.container = container;
         this.render();
@@ -9564,43 +9563,8 @@ var Drawer = (function () {
         var totalSeconds = (currentTime - this.initialTime) / 1000;
         observersToFill.forEach(function (observables) {
             _this.contentStream.push({ observables: observables, totalSeconds: totalSeconds });
-            // this.drawStream(observerToFill, totalSeconds);
             _this.render();
         });
-    };
-    Drawer.prototype.drawStream = function (params, totalSeconds) {
-        this.drawMarbles(params, totalSeconds);
-    };
-    Drawer.prototype.getPositionsInSeconds = function (params) {
-        var logs = params.logsStamps;
-        var positions = [];
-        for (var i = 0; i < logs.length; i++) {
-            positions.push(Math.floor((logs[i].timeStamp - this.initialTime) / 1000 * 10));
-        }
-        return positions;
-    };
-    // private getContent(): JQuery {
-    //     return $(`<li class="stream">
-    //                 <div class="stream_name"></div>
-    //                 <div class="stream_line"></div>
-    //             </li>`)
-    // }
-    Drawer.prototype.drawMarbles = function (observer, totalSeconds) {
-        // let $content = this.getContent();
-        // let $name = $content.find('.stream_name');
-        // $name.text(`${observer.observableName}`);
-        //
-        // let $line = $content.find('.stream_line');
-        // let logs = observer.logsStamps;
-        // logs.forEach(log => {
-        //     let position = Math.floor((log.timeStamp - this.initialTime)/1000 * 10)
-        //     let relativeTime = Math.floor(position / totalSeconds * 100);
-        //     let $marble = $(`<a class="stream_line__marble" title="${log.data}"></a>`);
-        //     $marble.css('left', `${relativeTime}px`);
-        //     $line.append($marble);
-        // });
-        //
-        // this.$streams.append($content);
     };
     return Drawer;
 }());
@@ -22211,10 +22175,10 @@ if(false) {
 
 "use strict";
 
-var marble_drawer_1 = __webpack_require__(80);
+var stream_drawer_1 = __webpack_require__(80);
 window.onload = function () {
     var container = document.getElementById('container');
-    var drawer = new marble_drawer_1.Drawer(container);
+    var drawer = new stream_drawer_1.Drawer(container);
     var observersToFill = [];
     var testObservable = {
         observableName: 'Test Observable',

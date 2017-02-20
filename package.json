@@ -1,8 +1,8 @@
 {
   "name": "stream-drawer",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "",
-  "main": "lib/stream-drawer.tsx",
+  "main": "lib/stream-drawer.js",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
